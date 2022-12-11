@@ -1,5 +1,6 @@
 :root {
-    --cabecalho-color: #00321f;
+    --cabecalho-color: #042016;
+    --links-color: rgba(122, 124, 122, 0.993);
     --pargrafo-color: rgb(141, 134, 134);
 }
 
@@ -11,13 +12,15 @@
 
 /* cabecario */
 .cabecario {
+    width: 100%;
     background-color: var(--cabecalho-color);
-    height: 10vh;
+    height: 8vh;
+    padding: 1rem 0rem
 }
 
 .cabecario .cabecario__caixa {
     max-width: 900px;
-    height: 10vh;
+    height: 8vh;
     margin: 0 auto;
     position: relative;
 }
@@ -41,7 +44,7 @@
 }
 
 .cabecario__navegacao .cabecario__lista .cabecario__item .cabecario__link {
-    color: rgba(5, 12, 6, 0.993);
+    color: var(--links-color);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 0.9rem;
@@ -84,37 +87,85 @@
 }
 
 .main .main__article .main__texto .main__paragrafo {
-    line-height: 2rem;
+    line-height: 1.7rem;
     color: var(--pargrafo-color)
 }
 
-.main__article .main__content {
+.main__article .main__caixas {
     margin: 5rem 0;
     overflow: auto;
 }
 
-.main__article .main__content .main__box {
+.main__article .main__caixas .main__caixa {
     float: left;
     padding: 0 16px;
     text-align: center;
 }
 
-.main__article .main__content .main__box .main__titulo {
+.main__article .main__caixas .main__caixa .main__titulo {
     text-transform: uppercase;
     padding: 1rem;
     letter-spacing: 3px;
     font-weight: 450;
 }
 
-.main__article .main__content .main__box .main__paragrafo {
+.main__article .main__content .main__caixa .main__paragrafo {
     color: var(--pargrafo-color)
 }
 
-.section2 {
-    width: 100%;
-    height: 600px;
+/* sessão 2 */
+.section2 { 
+    padding: 7rem 9rem;
+    height: auto;
     background-image: url(../imagens/bg_detalhe.png);
     background-repeat: no-repeat;
-    background-position: right bottom ;
-    background-size: cover
+    background-position: right bottom;
+    background-size: 100vw
+}
+
+
+.section2 .section2__texto {
+}
+
+.section2 .section2__texto .section2__titulo {
+    color: #fff;
+    font-weight: 450;
+    font-size: 4.5rem;
+    padding-bottom: 3rem;
+}
+
+.section2 .section2__texto .section2__paragrafo {
+    width: 50%;
+    color: #fff;
+    line-height: 1.7rem;
+}
+
+/* sessão3 */
+
+.section3 {
+    padding: 3rem 0rem;
+}
+
+.section3 .section3__titulo, 
+.section3 .section3__paragrafo {
+    text-align: center;
+    text-transform: uppercase;
+    color: green;
+    font-size: 2rem;
+}
+
+/* mapa */
+.map {
+    margin-bottom: 4rem;
+}
+
+/* footer */
+.fotter {
+    background-color: var(--cabecalho-color);
+    padding: 2rem 0rem;
+    text-align: center;
+}
+
+.fotter p {
+    color: var(--links-color);
 }
