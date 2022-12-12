@@ -61,14 +61,11 @@ body {
     color: rgb(225, 248, 225);
 }
 
-/* main__section imagem section */
-.main .main__section {
-    background-image: url(../imagens/topo.jpg);
+/* parte imagem section */
+
+.main__section .main__imagem {
     width: 100%;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-size: cover;
+    height: max-content;
 }
 
 /* parte article */
@@ -149,8 +146,8 @@ body {
     padding: 3rem 0rem;
 }
 
-.section3 .section3__titulo, 
-.section3 .section3__paragrafo {
+.section3 .section__address .section3__titulo, 
+.section3 .section__address .section3__paragrafo {
     text-align: center;
     text-transform: uppercase;
     color: green;
