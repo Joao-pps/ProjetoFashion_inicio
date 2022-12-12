@@ -10,6 +10,9 @@
     font-family: sans-serif;
 }
 
+body {
+    background-color: #fff;
+}
 /* cabecario */
 .cabecario {
     width: 100%;
@@ -120,7 +123,7 @@
     background-image: url(../imagens/bg_detalhe.png);
     background-repeat: no-repeat;
     background-position: right bottom;
-    background-size: 100vw
+    background-color: #003d52;
 }
 
 
