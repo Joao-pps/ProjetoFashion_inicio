@@ -1,13 +1,13 @@
 :root {
-    --cabecalho-color: #06251a;
-    --links-color: rgba(122, 124, 122, 0.993);
+    --cabecalho-color: #162028;
+    --links-color: #425564;
     --pargrafo-color: rgb(141, 134, 134);
 }
 
 * {
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
+    font-family: tahoma, Arial, sans-serif;
 }
 
 body {
@@ -70,8 +70,7 @@ body {
 
 /* parte article */
 .main .main__article {
-    width: 65%;
-    margin: 7rem auto;
+    padding: 3rem 15rem;
 
 }
 
@@ -115,7 +114,7 @@ body {
 
 /* sessão 2 */
 .section2 { 
-    padding: 7rem 9rem;
+    width: 100%;
     height: auto;
     background-image: url(../imagens/bg_detalhe.png);
     background-repeat: no-repeat;
@@ -125,6 +124,7 @@ body {
 
 
 .section2 .section2__texto {
+    padding: 6rem 9rem;
 }
 
 .section2 .section2__texto .section2__titulo {
@@ -138,6 +138,7 @@ body {
     width: 50%;
     color: #fff;
     line-height: 1.7rem;
+    font-size: 1.1rem
 }
 
 /* sessão3 */
