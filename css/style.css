@@ -1,5 +1,6 @@
 :root {
     --cabecalho-color: #162028;
+    --corpo-color: #fff;
     --links-color: #425564;
     --pargrafo-color: #555;
 }
@@ -11,7 +12,7 @@
 }
 
 body {
-    background-color: #fff;
+    background-color: var(--corpo-color);
 }
 
 /* cabecario */
@@ -71,12 +72,13 @@ body {
 
 /* parte article */
 .main {
-    padding: 3rem 15rem;
+    padding: 4rem 13rem;
 
 }
 
 .main .main__texto {
     text-align: center;
+    padding: 0rem 1rem;
 }
 
 .main .main__texto .main__titulo {
@@ -88,7 +90,8 @@ body {
 
 .main .main__texto .main__paragrafo {
     line-height: 2;
-    color: var(--pargrafo-color)
+    color: var(--pargrafo-color);
+    font-size: 1.2rem;
 }
 
 .main .main__caixas {
@@ -98,8 +101,13 @@ body {
 
 .main .main__caixas .main__caixa {
     float: left;
-    padding: 0 16px;
+    padding: 0 20px;
     text-align: center;
+    width: 29%
+}
+
+.main .main__caixas .main__caixa .main__imagem {
+    width: 100%
 }
 
 .main .main__caixas .main__caixa .main__titulo {
@@ -114,7 +122,7 @@ body {
 }
 
 /* sessão 2 */
-.section2 {
+.sobre {
     width: 100%;
     height: auto;
     background-image: url(../imagens/bg_detalhe.png);
@@ -124,18 +132,18 @@ body {
 }
 
 
-.section2 .section2__texto {
+.sobre .sobre__texto {
     padding: 6rem 9rem;
 }
 
-.section2 .section2__texto .section2__titulo {
+.sobre .sobre__texto .sobre__titulo {
     color: #fff;
     font-weight: 450;
     font-size: 4.5rem;
     padding-bottom: 3rem;
 }
 
-.section2 .section2__texto .section2__paragrafo {
+.sobre .sobre__texto .sobre__paragrafo {
     width: 50%;
     color: #fff;
     line-height: 1.7rem;
@@ -144,12 +152,12 @@ body {
 
 /* sessão3 */
 
-.section3 {
+.contato {
     padding: 3rem 0rem;
 }
 
-.section3 .section__address .section3__titulo,
-.section3 .section__address .section3__paragrafo {
+.contato .contato__informacao .contato__titulo,
+.contato .contato__informacao .contato__paragrafo {
     text-align: center;
     text-transform: uppercase;
     color: green;
@@ -157,17 +165,31 @@ body {
 }
 
 /* mapa */
-.map {
+.mapa {
     margin-bottom: 4rem;
 }
 
+.mapa__tamanho {
+    width: 100%;
+    height: 500px;
+    border: none;
+}
+
 /* footer */
-.fotter {
+.footer {
     background-color: var(--cabecalho-color);
     padding: 2rem 0rem;
     text-align: center;
 }
 
-.fotter p {
+.footer .footer__paragrafo {
     color: var(--links-color);
+    transition: 300ms;
+    display: inline-block;
+}
+
+.footer .footer__paragrafo:is(:hover) {
+    transition: 300ms;
+    color: rgb(225, 248, 225);
+    cursor: pointer;
 }
