@@ -1,7 +1,7 @@
 :root {
     --cabecalho-color: #162028;
     --links-color: #425564;
-    --pargrafo-color: rgb(141, 134, 134);
+    --pargrafo-color: #555;
 }
 
 * {
@@ -13,6 +13,7 @@
 body {
     background-color: #fff;
 }
+
 /* cabecario */
 .cabecario {
     width: 100%;
@@ -63,57 +64,57 @@ body {
 
 /* parte imagem section */
 
-.main__section .main__imagem {
+.section .section__imagem {
     width: 100%;
     height: max-content;
 }
 
 /* parte article */
-.main .main__article {
+.main {
     padding: 3rem 15rem;
 
 }
 
-.main .main__article .main__texto {
+.main .main__texto {
     text-align: center;
 }
 
-.main .main__article .main__texto .main__titulo {
+.main .main__texto .main__titulo {
     font-size: 2rem;
     padding: 2rem 0rem;
     font-weight: 900;
     color: rgb(43, 42, 42);
 }
 
-.main .main__article .main__texto .main__paragrafo {
-    line-height: 1.7rem;
+.main .main__texto .main__paragrafo {
+    line-height: 2;
     color: var(--pargrafo-color)
 }
 
-.main__article .main__caixas {
+.main .main__caixas {
     margin: 5rem 0;
     overflow: auto;
 }
 
-.main__article .main__caixas .main__caixa {
+.main .main__caixas .main__caixa {
     float: left;
     padding: 0 16px;
     text-align: center;
 }
 
-.main__article .main__caixas .main__caixa .main__titulo {
+.main .main__caixas .main__caixa .main__titulo {
     text-transform: uppercase;
     padding: 1rem;
     letter-spacing: 3px;
-    font-weight: 450;
+    font-weight: 500;
 }
 
-.main__article .main__content .main__caixa .main__paragrafo {
+.main .main__caixas .main__caixa .main__paragrafo {
     color: var(--pargrafo-color)
 }
 
 /* sessão 2 */
-.section2 { 
+.section2 {
     width: 100%;
     height: auto;
     background-image: url(../imagens/bg_detalhe.png);
@@ -147,7 +148,7 @@ body {
     padding: 3rem 0rem;
 }
 
-.section3 .section__address .section3__titulo, 
+.section3 .section__address .section3__titulo,
 .section3 .section__address .section3__paragrafo {
     text-align: center;
     text-transform: uppercase;
