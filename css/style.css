@@ -15,7 +15,7 @@ body {
     background-color: var(--corpo-color);
 }
 
-/* cabecario */
+/* cabeçalho da pagina */
 .cabecario {
     width: 100%;
     background-color: var(--cabecalho-color);
@@ -63,14 +63,14 @@ body {
     color: rgb(225, 248, 225);
 }
 
-/* parte imagem section */
+/* sessão com imagem */
 
 .imagem .imagem__fundo {
     width: 100%;
     height: max-content;
 }
 
-/* parte article */
+/* sessão principal da pagina */
 .main {
     padding: 4rem 13rem;
 
@@ -121,7 +121,7 @@ body {
     color: var(--pargrafo-color)
 }
 
-/* sessão 2 */
+/* sessão sobre nos */
 .sobre {
     width: 100%;
     height: auto;
@@ -150,8 +150,7 @@ body {
     font-size: 1.1rem
 }
 
-/* sessão3 */
-
+/* sessão contato */
 .contato {
     padding: 3rem 0rem;
 }
@@ -164,7 +163,7 @@ body {
     font-size: 2rem;
 }
 
-/* mapa */
+/* sessão mapa */
 .mapa {
     margin-bottom: 3.5rem;
 }
@@ -175,7 +174,7 @@ body {
     border: none;
 }
 
-/* footer */
+/* footer da pagina */
 .footer {
     background-color: var(--cabecalho-color);
     padding: 2rem 0rem;
