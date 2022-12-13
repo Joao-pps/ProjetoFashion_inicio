@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <!-- cabecçalho com uma div caixa dentro para enquadrar os elementos -->
+    <!-- cabeçalho com uma div caixa dentro para enquadrar e centralizar os elementos -->
     <header class="cabecario">
         <div class="cabecario__caixa">
             <img class="cabecario__logo" src="imagens/logo.png" alt="ligo da pagina">
@@ -20,14 +20,16 @@
                 <ul class="cabecario__lista">
                     <li class="cabecario__item"><a class="cabecario__link" href="#s1">Portfolio</a></li>
                     <li class="cabecario__item"><a class="cabecario__link" href="#s2">About us</a></li>
-                    <li class="cabecario__item"><a class="cabecario__link" href="">Contact</a></li>
+                    <li class="cabecario__item"><a class="cabecario__link" href="#s3">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+    <!-- sessão onde ficara a imagem da modelo -->
     <section class="section">
         <img class="section__imagem" src="imagens/topo.jpg" alt="Mulher modelo sentada">
     </section>
+    <!-- parte principal da minha pagina, onde vai conter informaçoes sobre a pagina -->
     <main class="main" id="s1">
         <div class="main__texto">
             <h1 class="main__titulo">New Fashion Everything Never Enough</h1>
@@ -43,26 +45,27 @@
         </div>
         <div class="main__caixas">
             <article class="main__caixa">
-                <img src="imagens/modelo1.jpg" alt="modelo1">
+                <img class="main__imagem" src="imagens/modelo1.jpg" alt="modelo1">
                 <p class="main__titulo">Veste Romasa</p>
                 <p class="main__paragrafo">Strong &amp; charismatic</p>
             </article>
             <article class="main__caixa">
-                <img src="imagens/modelo2.jpg" alt="modelo2">
+                <img class="main__imagem" src="imagens/modelo2.jpg" alt="modelo2">
                 <p class="main__titulo">Jackte Fima</p>
                 <p class="main__paragrafo">Strong Sensonality</p>
             </article>
             <article class="main__caixa">
-                <img src="imagens/modelo3.jpg" alt="modelo3">
+                <img class="main__imagem" src="imagens/modelo3.jpg" alt="modelo3">
                 <p class="main__titulo">Jacket Black Kira</p>
                 <p class="main__paragrafo">Power Fascinating</p>
             </article>
         </div>
     </main>
-    <section class="section2" id="s2">
-        <div class="section2__texto">
-            <h2 class="section2__titulo">Everything Never Enough Just Fashion</h2>
-            <p class="section2__paragrafo">
+    <!-- sessão2 com um background e com uma imagem -->
+    <section class="sobre" id="s2">
+        <div class="sobre__texto">
+            <h2 class="sobre__titulo">Everything Never Enough Just Fashion</h2>
+            <p class="sobre__paragrafo">
                 Praesent placerat eros eget lacus ullamcorper, id dapibus ante vestibulum. Curabitur quis
                 condimentum
                 diam. Duis aliquet erat vel laoreet tincidunt. Pellentesque vitae varius ligula. Phasellus in nibh
@@ -74,21 +77,23 @@
             </p>
         </div>
     </section>
-    <section class="section3">
-        <address class="section__address">
-            <h2 class="section3__titulo">Call me now for design</h2>
-            <p class="section3__paragrafo">012-1234-4567</p>
+    <!-- sessão2 onde fica a parte de contato, pensei em por um formulario, quem sabe -->
+    <section class="contato" id="s3">
+        <address class="contato__informacao">
+            <h2 class="contato__titulo">Call me now for design</h2>
+            <p class="contato__paragrafo">012-1234-4567</p>
         </address>
     </section>
-    <section class="map">
+    <!-- sessão -->
+    <section class="mapa">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126682.34272570006!2d-34.96400012545256!3d-7.1464311969246515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ace839019aa3d7%3A0x6e414a9c6d26db34!2sJo%C3%A3o%20Pessoa%2C%20PB!5e0!3m2!1spt-BR!2sbr!4v1670696451282!5m2!1spt-BR!2sbr"
-            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+            class="mapa__tamanho" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade">
         </iframe>
     </section>
-    <footer class="fotter">
-        <p>Copyright &copy; fastfashion.com</p>
+    <footer class="footer">
+        <p class="footer__paragrafo">Copyright &copy; fastfashion.com</p>
     </footer>
 </body>
 
