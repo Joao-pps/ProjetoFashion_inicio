@@ -65,7 +65,7 @@ body {
 
 /* parte imagem section */
 
-.section .section__imagem {
+.imagem .imagem__fundo {
     width: 100%;
     height: max-content;
 }
@@ -166,7 +166,7 @@ body {
 
 /* mapa */
 .mapa {
-    margin-bottom: 4rem;
+    margin-bottom: 3.5rem;
 }
 
 .mapa__tamanho {
