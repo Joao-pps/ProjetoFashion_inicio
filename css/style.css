@@ -133,7 +133,7 @@ body {
 
 
 .sobre .sobre__texto {
-    padding: 6rem 9rem;
+    padding: 6rem 10rem;
 }
 
 .sobre .sobre__texto .sobre__titulo {
@@ -141,12 +141,13 @@ body {
     font-weight: 450;
     font-size: 4.5rem;
     padding-bottom: 3rem;
+    text-transform: uppercase;
 }
 
 .sobre .sobre__texto .sobre__paragrafo {
     width: 50%;
     color: #fff;
-    line-height: 1.7rem;
+    line-height: 1.5;
     font-size: 1.1rem
 }
 
