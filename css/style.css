@@ -1,5 +1,6 @@
 :root {
     --cabecalho-color: #162028;
+    --footer-color: #0b171f;
     --corpo-color: #fff;
     --links-color: #425564;
     --pargrafo-color: #555;
@@ -53,13 +54,12 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 0.9rem;
-    transition: 300ms;
+    transition: color 300ms linear;
     letter-spacing: 3px;
     font-weight: 550;
 }
 
 .cabecario__navegacao .cabecario__lista .cabecario__item .cabecario__link:is(:hover) {
-    transition: 300ms;
     color: rgb(225, 248, 225);
 }
 
@@ -142,6 +142,7 @@ body {
     font-size: 4.5rem;
     padding-bottom: 3rem;
     text-transform: uppercase;
+    font-weight: normal;
 }
 
 .sobre .sobre__texto .sobre__paragrafo {
@@ -160,8 +161,10 @@ body {
 .contato .contato__informacao .contato__paragrafo {
     text-align: center;
     text-transform: uppercase;
-    color: green;
+    color: #143f52;
     font-size: 2rem;
+    font-style: normal;
+    font-weight: bold;
 }
 
 /* sessão mapa */
@@ -177,19 +180,20 @@ body {
 
 /* footer da pagina */
 .footer {
-    background-color: var(--cabecalho-color);
+    background-color: var(--footer-color);
     padding: 2rem 0rem;
     text-align: center;
 }
 
 .footer .footer__paragrafo {
     color: var(--links-color);
-    transition: 300ms;
+    transition: color 300ms linear;
     display: inline-block;
+    font-size: 1.2rem;
+    letter-spacing: 5px;
 }
 
 .footer .footer__paragrafo:is(:hover) {
-    transition: 300ms;
     color: rgb(225, 248, 225);
     cursor: pointer;
 }
